@@ -1,0 +1,156 @@
+.weekly-menu-admin-container {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #e0f2e0;
+  min-height: 80vh;
+  border-radius: 15px;
+}
+
+.weekly-menu-admin-container h2 {
+  color: #1f6f1f;
+  margin-bottom: 10px;
+}
+
+.weekly-menu-admin-container p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* TOP BAR */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* HOSTEL BUTTONS */
+
+.hostel-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.hostel-toggle button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.hostel-toggle .active {
+  background: #4CAF50;
+  color: white;
+}
+
+/* PREDICTION BOX */
+
+.prediction-box {
+  padding: 10px 18px;
+  background: #e6f7ff;
+  border-left: 5px solid #1890ff;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* MENU SUGGESTION BUTTON */
+
+.suggestion-btn {
+  padding: 10px 18px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.suggestion-btn:hover {
+  background: #e68900;
+}
+
+/* TABLE */
+
+.weekly-menu-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.weekly-menu-admin-table th,
+.weekly-menu-admin-table td {
+  border: 1px solid #9cd79c;
+  padding: 12px;
+  text-align: left;
+}
+
+.weekly-menu-admin-table th {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  font-size: 18px;
+}
+
+.weekly-menu-admin-table tr:nth-child(even) {
+  background-color: #d4edda;
+}
+
+.weekly-menu-admin-table tr:nth-child(odd) {
+  background-color: #c8e6c9;
+}
+
+.weekly-menu-admin-table tr:hover {
+  background-color: #a5d6a7;
+}
+
+.weekly-menu-admin-table input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #81c784;
+}
+
+/* SAVE BUTTON */
+
+.save-btn {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prediction-box {
+    width: 100%;
+  }
+
+  .suggestion-btn {
+    width: 100%;
+  }
+
+  .weekly-menu-admin-table th,
+  .weekly-menu-admin-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+}

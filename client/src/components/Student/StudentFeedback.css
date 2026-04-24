@@ -1,0 +1,81 @@
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.feedback-card {
+  width: 420px;
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.feedback-card h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+select,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+.stars span {
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.stars span.active {
+  opacity: 1;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: #2ecc71;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.message {
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.success {
+  background: #e8f9ef;
+  color: #2ecc71;
+}
+
+.error {
+  background: #ffe6e6;
+  color: red;
+}

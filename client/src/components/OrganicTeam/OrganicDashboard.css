@@ -1,0 +1,109 @@
+.organic-dashboard {
+  padding: 30px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.page-title {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+/* =============================
+   STAT CARDS
+============================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  color: #2d6a4f;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+
+/* =============================
+   STATUS
+============================= */
+
+.status-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.status-box {
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pending {
+  background: #ff9800;
+}
+
+.processing {
+  background: #2196f3;
+}
+
+.completed {
+  background: #4caf50;
+}
+
+
+/* =============================
+   CHART
+============================= */
+
+.chart-box {
+  background: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.bar-container {
+  margin-top: 15px;
+}
+
+.bar {
+  height: 30px;
+  margin-bottom: 10px;
+  color: white;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.raw-bar {
+  background: #4caf50;
+}
+
+.cooked-bar {
+  background: #f44336;
+}

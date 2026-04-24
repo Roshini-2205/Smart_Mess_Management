@@ -1,0 +1,75 @@
+.organic-suggestions-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.suggestion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px; /* limits form width */
+  margin: 0 auto; /* centers the form */
+}
+
+.suggestion-form select,
+.suggestion-form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.suggestion-form button {
+  align-self: flex-end; /* moves button to right */
+  padding: 6px 16px; /* smaller button */
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #22c55e;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.suggestion-form button:hover {
+  background-color: #16a34a;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Status badges */
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 70px;
+  color: white;
+}
+
+/* Pending - orange */
+.status.pending {
+  background-color: #FF9800;
+}
+
+/* Resolved - green */
+.status.resolved {
+  background-color: #4CAF50;
+}

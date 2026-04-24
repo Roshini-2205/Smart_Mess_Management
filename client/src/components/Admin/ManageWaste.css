@@ -1,0 +1,200 @@
+.waste-page {
+  padding: 25px;
+  background: #f6fbf9;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.waste-form {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.waste-form input,
+.waste-form select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.waste-form button {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.waste-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.waste-table th {
+  background: #e8f5f0;
+  padding: 10px;
+}
+
+.waste-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.sent {
+  color: green;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.send-icon {
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: red;
+  cursor: pointer;
+}
+
+/* ===== Hostel Filter ===== */
+.hostel-filter {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hostel-filter select {
+  padding: 6px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hostel-filter select:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.hostel-filter select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* ===== Prediction Box ===== */
+.prediction-box {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-left: 6px solid #28a745;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.prediction-box b {
+  color: #28a745;
+  font-size: 16px;
+}
+
+.prediction-box:hover {
+  background: linear-gradient(135deg, #e9f7ef, #d4edda);
+  border-left-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Waste Form Inputs ===== */
+.waste-form input,
+.waste-form select {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.waste-form input:focus,
+.waste-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ===== Add Record Button ===== */
+.waste-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.waste-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ===== Waste Table ===== */
+.waste-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.waste-table th,
+.waste-table td {
+  border: 1px solid #dee2e6;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.waste-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 500;
+}
+
+.waste-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.waste-table tr:hover {
+  background-color: #e2e6ea;
+}
+
+.waste-table td svg {
+  cursor: pointer;
+  color: #dc3545;
+  transition: all 0.2s ease;
+}
+
+.waste-table td svg:hover {
+  color: #a71d2a;
+  transform: scale(1.2);
+}

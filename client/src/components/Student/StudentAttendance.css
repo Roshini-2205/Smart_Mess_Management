@@ -1,0 +1,330 @@
+/* =================================================
+   PAGE
+================================================= */
+.student-attendance-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f2fe, #f0fdf4);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ⭐ keeps scanner centered */
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+
+/* =================================================
+   HEADER
+================================================= */
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header-top h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.view-details-btn {
+  padding: 10px 18px;
+  background: linear-gradient(90deg, #096a2d, #17f88f);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* =================================================
+   SCANNER CARD  (UNCHANGED CENTERED)
+================================================= */
+.scan-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  text-align: center;
+
+  width: 100%;
+  max-width: 420px; /* ⭐ fixed width → center look */
+  margin-bottom: 30px;
+}
+
+.scan-btn {
+  width: 100%;
+  padding: 14px;
+  background: #77c79f;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.scan-btn:hover {
+  background: linear-gradient(90deg, #4de183, #066036);
+}
+
+.scan-btn.stop {
+  background: #ef4444;
+  margin-bottom: 15px;
+}
+
+.qr-box {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.status {
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+
+/* =================================================
+   HISTORY CARD (ADMIN STYLE)
+================================================= */
+.history-card {
+  width: 100%;
+  max-width: 700px;
+
+  background: white;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+
+/* top header row */
+.history-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.total-count {
+  background: linear-gradient(90deg, #096a2d, #17f88f);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+
+/* =================================================
+   DATE FILTER (LEFT SIDE like admin)
+================================================= */
+.date-filter-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.date-filter-row input {
+  padding: 7px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.date-filter-row button {
+  padding: 7px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* =================================================
+   TABLE (ADMIN STYLE LOOK)
+================================================= */
+.history-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-card th {
+  background: linear-gradient(90deg, #096a2d, #17f88f);
+  color: white;
+  padding: 12px;
+}
+
+.history-card td {
+  padding: 10px;
+  text-align: center;
+}
+
+.history-card tr:nth-child(even) {
+  background: #f6f7fb;
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+@media (max-width: 480px) {
+
+  .scan-card {
+    max-width: 95%;
+  }
+
+  .history-card {
+    max-width: 95%;
+  }
+
+  .header-top {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* hide real input */
+.hidden-date-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* calendar icon button */
+.calendar-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* clear button */
+.clear-btn {
+  background: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* CENTER SCANNER CARD */
+.scan-card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.scan-card {
+  background: white;
+  padding: 32px;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.25s;
+}
+
+.scan-card:hover {
+  transform: translateY(-4px);
+}
+
+.scan-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #096a2d, #17f88f);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.scan-btn.stop {
+  background: #ef4444;
+}
+
+.qr-box {
+  margin-top: 12px;
+}
+
+.status {
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* TABLE WRAPPER, MATCH ADMIN STYLE */
+.table-wrapper {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: linear-gradient(90deg, #096a2d, #17f88f);
+  color: white;
+  padding: 14px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f6f7fb;
+}
+
+.empty {
+  padding: 20px;
+  color: gray;
+}
+
+.history-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.total-count {
+  background: #096a2d;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.date-filter input {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,351 @@
+/* ================= PROFILE ================= */
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile {
+  cursor: pointer;
+}
+
+/* avatar circle */
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #a3f7c6;
+  color: rgb(112, 98, 98);
+  font-weight: 600;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  transition: 0.2s;
+}
+
+.avatar:hover {
+  transform: scale(1.08);
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+
+  width: 160px;
+
+  background: #fff;
+  border-radius: 10px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+
+  overflow: hidden;
+  animation: fadeIn 0.15s ease;
+  z-index: 10;
+}
+
+.dropdown div {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.dropdown div:hover {
+  background-color: #e8f5e9;
+  color: #00C853;
+}
+
+
+/* small arrow pointer */
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 15px;
+
+  width: 12px;
+  height: 12px;
+
+  background: white;
+  transform: rotate(45deg);
+
+  box-shadow: -2px -2px 5px rgba(0,0,0,0.04);
+}
+
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", sans-serif;
+  background: #cbffbc;
+}
+
+
+/* ===== Header ===== */
+/* .header {
+  background: #039d45;
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:16px;
+} */
+
+.header {
+  height: 90px;              /* fixed height (prevents growing) */
+  padding: 0 26px;           /* remove vertical padding */
+  font-size:22px;
+  background: linear-gradient(90deg, #154426, #17de81);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.profile {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/* ===== Body ===== */
+.body {
+  flex: 1;
+  display: flex;
+}
+
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 250px;
+  background:#83e492;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+  color: rgb(26, 75, 11);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 14px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar li:hover {
+  background: #a9d3ac;
+}
+
+.sidebar .active {
+  background:linear-gradient(90deg, #096a2d, #17f88f);
+  color: white;
+}
+
+
+/* ===== Main ===== */
+.main {
+  flex: 1;
+  padding: 25px;
+}
+
+.date {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+
+/* ===== Cards ===== */
+.row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 160px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-size:18px;
+}
+/* ================= MENU CARD ================= */
+
+.card.menu-card {
+  text-align: left;
+  min-width: 200px;
+}
+
+/* list style */
+.menu-card ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.menu-card li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* soft hover */
+.menu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+h3 {
+  margin-bottom: 12px;
+  color: #2e7d32;
+}
+
+
+/* ===== Mobile Responsive ===== */
+/* ================= MOBILE RESPONSIVE ================= */
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  /* stack sidebar + content vertically */
+  .body {
+    flex-direction: column;
+  }
+
+  /* ===== Sidebar becomes TOP NAV ===== */
+  .sidebar {
+    width: 100%;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    overflow-x: auto;
+    white-space: nowrap;
+
+    box-shadow: none;
+  }
+
+  .sidebar ul {
+    display: flex;
+    width: 100%;
+  }
+
+  .sidebar li {
+    flex: 1;
+    font-size: 13px;
+    padding: 10px 8px;
+    text-align: center;
+
+    border: none;
+  }
+
+  /* ===== Main spacing ===== */
+  .main {
+    padding: 14px;
+  }
+
+  /* ===== Cards stack ===== */
+  .row {
+    flex-direction: column;
+  }
+
+  /* ===== Header compact ===== */
+  .header {
+    height: 60px;
+    padding: 0 14px;
+  }
+
+  .page-title {
+    font-size: 16px;
+  }
+
+  .avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  /* ===== Cards full width ===== */
+  .card {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+/* ================= MENU LIST STYLE ================= */
+
+.menu-section {
+  margin-top: 30px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.menu-item {
+  background: white;
+  padding: 16px 18px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+/* soft hover */
+.menu-item:hover {
+  background: #f4fff6;
+}
+
+.meal-time {
+  font-weight: 500;
+  color: #2e7d32;
+  font-size: 15px;
+  min-width: 130px;
+}
+
+.meal-food {
+  color: #555;
+  font-size: 14px;
+  text-align: right;
+}

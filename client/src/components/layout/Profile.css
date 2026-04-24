@@ -1,0 +1,31 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f0fff4; /* light green background */
+  min-height: 100vh;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.profile-avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.profile-fields {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.profile-fields p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}

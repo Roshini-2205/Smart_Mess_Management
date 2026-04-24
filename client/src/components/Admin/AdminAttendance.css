@@ -1,0 +1,188 @@
+/* ===== PAGE ===== */
+
+.attendance-container {
+  padding: 35px;
+  min-height: 100vh;
+background: linear-gradient(135deg, #c4f4dd, #f1f5ff);
+
+
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== HEADER ===== */
+
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.attendance-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.count-badge {
+  background:linear-gradient(90deg, #096a2d, #17f88f);;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* ===== QR ===== */
+
+.qr-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.qr-card {
+  background: white;
+  padding: 32px;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.25s;
+}
+
+.qr-card:hover {
+  transform: translateY(-6px);
+}
+
+.qr-text {
+  margin-top: 12px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* ===== TOGGLES ===== */
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.toggle-wrapper button {
+  padding: 10px 24px;
+  border-radius: 14px;
+  border: none;
+  background: #b1ddb8;
+   color: rgb(12, 100, 7);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle-wrapper button:hover {
+  background: #40d483;
+}
+
+.toggle-wrapper .active {
+  background:linear-gradient(90deg, #096a2d, #17f88f);;
+  color: white;
+}
+
+.mess-toggle {
+  margin-bottom: 28px;
+}
+
+/* ===== TABLE ===== */
+
+.table-wrapper {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: linear-gradient(90deg, #096a2d, #17f88f);
+  color: white;
+  padding: 14px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f6f7fb;
+}
+
+.empty {
+  padding: 20px;
+  color: gray;
+}
+
+/* ===== UTIL ===== */
+
+.capitalize {
+  text-transform: capitalize;
+}
+/* ===== DATE FILTER ===== */
+
+
+.date-filter {
+  display: flex;
+  justify-content: flex-start;   /* ✅ LEFT SIDE */
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.date-filter input {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.date-filter button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ef4444;
+  color: white;
+  font-weight: 500;
+}
+
+/* ===== DATE LEFT ===== */
+.date-filter {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 18px;
+  gap: 10px;
+}
+
+/* ===== COUNTS ===== */
+.counts-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.boys-badge {
+  background: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.girls-badge {
+  background: #db2777;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+}

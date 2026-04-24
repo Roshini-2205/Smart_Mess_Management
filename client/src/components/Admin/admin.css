@@ -1,0 +1,115 @@
+/* ================= PAGE WRAPPER ================= */
+
+/* Full page height fix */
+.admin-container {
+  display: flex;
+  min-height: 100vh;   /* ✅ correct full screen height */
+  background: #f3f4f6;
+}
+
+/* stretch right side fully */
+.admin-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* content fills remaining height */
+.admin-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* dashboard page fills content area */
+.admin-menu-page {
+  padding: 30px;
+  flex: 1;            /* ⭐ THIS increases height */
+}
+/* Title */
+.title {
+  margin-top:-35px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Toggle buttons */
+.toggle-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.toggle-buttons button {
+  padding: 11px 24px;
+  border-radius: 8px;
+  border: none;
+  background: #98b8f6;
+  color: rgb(58, 35, 133);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+.toggle-buttons button:hover {
+  transform: translateY(-2px);
+   color: white;
+  
+}
+
+.toggle-buttons button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Section */
+.mess-section {
+  margin-bottom: 40px;
+}
+
+.mess-title {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 4 cards horizontally */
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+/* Meal cards */
+.meal-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+  text-align: center;
+  font-size: 18px;
+}
+
+.meal-card:hover {
+  transform: translateY(-4px);
+}
+
+.meal-card h4 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.meal-card p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .meal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

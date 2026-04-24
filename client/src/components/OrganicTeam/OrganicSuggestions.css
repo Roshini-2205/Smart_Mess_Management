@@ -1,0 +1,106 @@
+/* Page container */
+.organic-suggestions-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Page title */
+.organic-suggestions-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form styling */
+.suggestion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.suggestion-form select,
+.suggestion-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.suggestion-form textarea {
+  min-height: 80px;
+}
+
+/* Submit button */
+.suggestion-form button {
+  align-self: flex-end; /* right side */
+  padding: 8px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #22c55e;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.suggestion-form button:hover {
+  background-color: #16a34a;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table styling */
+.suggestions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.suggestions-table th {
+  background: #e8f5e9;
+  color: #333;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.suggestions-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+  min-width: 80px;
+}
+
+/* Pending - orange */
+.status-badge.pending {
+  background-color: #FF9800;
+  color: white;
+}
+
+/* Resolved - green */
+.status-badge.resolved {
+  background-color: #4CAF50;
+  color: white;
+}
